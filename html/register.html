@@ -8,35 +8,47 @@
     <link rel="icon" href="assets/movie-clapper-open.png" type="image/png">
 </head>
 <body>
-    <header>
-        <img src="assets/Logo.png" alt="Logo Chill">
-    </header>
-    <main>
-        <form>
-            <h3>Daftar</h3>
-            <p>Selamat datang!</p>
-            <label for="username">Username</label>
-            <br>
-            <input type="text" id="username" name="username" placeholder="Masukkan username">
-            <br>
-            <label for="password">Kata Sandi</label>
-            <br>
-            <div class="password-container">
-                <input type="password" id="password" name="password" placeholder="Masukkan kata sandi">
-                <img src="assets/eye-off.png" alt="eye-off">
-            </div>
-            <br>
-            <label for="password">Konfirmasi Kata Sandi</label>
-            <br>
-            <div class="password-container">
-                <input type="password" id="password" name="password" placeholder="Masukkan kata sandi">
-                <img src="assets/eye-off.png" alt="eye-off">
-            </div>
-        </form>
-        <p>Sudah punya akun? <a href="login.html">Masuk</a></p>
-    </main>
-    <footer>
-        <p>&copy; 2024 Chill. All Rights Reserved.</p>
-    </footer>
+    <div class="container">
+        <div class="background"></div>
+        <div class="login-wrapper">
+            <header class="header">
+                <img src="/assets/Logo.png" alt="Logo Chill">
+            </header>
+            <main>
+                <form class="form">
+                    <div class="register-container">
+                        <h3>Daftar</h3>
+                        <p>Selamat datang!</p>
+                    </div>
+                    <div class="input-group1">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Masukkan username">
+                    </div>
+                    <div class="input-group2">
+                        <label for="password">Kata Sandi</label>
+                        <div class="password-container">
+                            <input type="password" id="password" name="password" placeholder="Masukkan kata sandi">
+                            <img src="/assets/eye-off.png" alt="Tampilkan/Sembunyikan" class="toggle-password">
+                        </div>
+                    </div> 
+                    <div class="input-group3">
+                        <label for="confirm-password">Konfirmasi Kata Sandi</label>
+                        <div class="password-container">
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Masukkan kata sandi">
+                            <img src="/assets/eye-off.png" alt="Tampilkan/Sembunyikan" class="toggle-password">
+                        </div>
+                    </div> 
+                    <div class="link">
+                        <p class="login-link">Sudah punya akun? <a href="login.html">Masuk</a></p>
+                    </div>
+                    <div class="button-group">
+                        <button type="submit" class="btn-login">Masuk</button>
+                        <p class="semibold">Atau</p>
+                        <button type="button" class="btn-google"><img src="/assets/google.png" alt="logo-google">Masuk dengan Google</button>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
 </body>
 </html>
