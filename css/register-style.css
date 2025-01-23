@@ -135,11 +135,6 @@ input::placeholder {
     font-weight: bold;
 }
 
-.login-link a:hover {
-    text-decoration: underline;
-}
-
-
 button {
   width: 100%;
   padding: 10px;

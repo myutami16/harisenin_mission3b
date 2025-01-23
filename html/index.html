@@ -1,80 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chill Homepage</title>
-    <link rel="stylesheet" href="/css/index-style.css">
-    <link rel="icon" href="assets/movie-clapper-open.png" type="image/png">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-      <div class="logo">
-        <img src="images/logo.png" alt="Logo Chill">
-      </div>
-      <nav>
-        <a href="#">Series</a>
-        <a href="#">Film</a>
-        <a href="#">Daftar Saya</a>
-      </nav>
-      <div class="profile">
-        <img src="assets/avatar-profile.png" alt="Avatar Profil">
-      </div>
-    </header>
-    <!-- bagian main -->
-     <main>
-        <section class="Hero">
-            <button type="button">Mulai</button>
-            <button type="button">Selengkapnya</button>
-            <p>18+</p>
-            <!-- <button type="button">Mulai</button>
-            <button type="button">Mulai</button> -->
-        </section>
-        <section class="continue-watching">
-            <h3>Melanjutkan Tonton Film</h3>
-        </section>
-        <section class="top-rating">
-            <h3>Top Raing Film dan Series Hari Ini</h3>
-        </section>
-        <section class="trending">
-            <h3>Film Trending</h3>
-        </section>
-        <section class="new-releases">
-            <h3>Rilis Baru</h3>
-        </section>
-     </main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Londrina+Solid:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
 
-     <!-- Footer -->
-  <footer>
-    <div class="footer-logo">
-      <img src="assets/Logo.png" alt="Logo Chill">
-    </div>
-    <div class="footer-genre-link">
-        <h4>Genre</h4>
-        <a href="#">Aksi</a>
-        <a href="#">Anak-anak</a>
-        <a href="#">Anime</a>
-        <a href="#">Britania</a>
-        <a href="#">Drama</a>
-        <a href="#">Fantasi Ilmiah & Fantasi</a>
-        <a href="#">Kejahatan</a>
-        <a href="#">KDrama</a>
-        <a href="#">Komedi</a>
-        <a href="#">Petualangan</a>
-        <a href="#">Perang</a>
-        <a href="#">Romantis</a>
-        <a href="#">Sains & Alam</a>
-        <a href="#">Thriller</a>
+    <!-- My Style -->
+    <link rel="stylesheet" href="/css/index-style.css" />
+    <link rel="icon" href="/assets/movie-clapper-open.png" type="image/png" />
+    <title>Chill</title>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <div class="navbar-nav">
+        <div class="navbar-logo">
+          <div class="logo-wrapper">
+            <img src="/assets/movie.png" alt="movie vector" />
+          </div>
+          <a href="index.html" class="logotext">CHILL</a>
+        </div>
+        <ul class="navigation">
+          <li><a href="#">Series</a></li>
+          <li><a href="#">Film</a></li>
+          <li><a href="#">Daftar Saya</a></li>
+        </ul>
       </div>
-    <div class="footer-links">
-      <h4>Bantuan</h4>
-      <a href="#">FAQ</a>
-      <a href="#">Kontak Kami</a>
-      <a href="#">Privasi</a>
-      <a href="#">Syarat & Ketentuan</a>
-    </div>
-    <p>&copy; 2024 Chill. All Rights Reserved.</p>
-  </footer>
-</body>
+      <!-- avatar-icon -->
+      <!-- Avatar Dropdown -->
+      <div class="navbar-avatar">
+        <img
+          src="/assets/avatar-profile.png"
+          alt="avatar-profile"
+          class="avatar-img"
+        />
+        <div class="arrow-down">
+          <img src="/assets/Vector-arrow.png" alt="arrow-vector" />
+        </div>
+        <!-- Dropdown Menu -->
+        <div class="dropdown-menu">
+          <ul>
+            <li>
+              <img src="/assets/profile.svg" alt="profile" />
+              <a href="#profil-saya"
+                ><span class="profileText">Profil Saya</span></a
+              >
+            </li>
+            <li>
+              <img src="/assets/star-profile.svg" alt="Premium" />
+              <a href="#ubah-premium">Ubah Premium</a>
+            </li>
+            <li>
+              <img src="/assets/logout.svg" alt="logout" />
+              <a href="#keluar">Keluar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section starts -->
+    <section class="hero" id="home">
+      <main class="content-wrapper">
+        <div class="content-text">
+          <h1>Wood Job!</h1>
+          <p>
+            Seorang pemuda kota yang kehilangan arah dalam hidupnya memutuskan
+            untuk bergabung dengan program pelatihan kehutanan setelah gagal
+            masuk universitas. Tanpa pengalaman atau pengetahuan tentang
+            kehidupan di pedesaan, ia harus menghadapi kerasnya alam, pekerjaan
+            fisik yang berat, dan tradisi lokal yang unik. Namun, di tengah
+            perjuangannya, ia menemukan makna baru dalam hidup dan hubungan
+            mendalam dengan alam serta komunitas tempatnya tinggal.
+          </p>
+        </div>
+        <div class="content-btn">
+          <div class="btn-wrapper">
+            <button class="btn-start"><span>Mulai</span></button>
+            <button class="btn-info">
+              <i data-feather="info"></i><span>Selengkapnya</span>
+            </button>
+            <button class="btn-age"><span>18+</span></button>
+          </div>
+          <div class="btn-volume">
+            <button class="volume-off">
+              <img src="/assets/volume-off.png" alt="volume-off" />
+            </button>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- Continue Watching Section start -->
+    <section class="movie-section">
+      <h2>Melanjutkan Tonton Film</h2>
+      <div class="movie-carousel">
+        <div class="arrow-btn">
+          <div class="arrow-left">
+            <button class="carousel-btn left-btn" aria-label="Scroll left">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.0002 7.00008V9.00008H4.00016L9.50016 14.5001L8.08016 15.9201L0.160156 8.00008L8.08016 0.0800781L9.50016 1.50008L4.00016 7.00008H16.0002Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <ul class="movie-list">
+          <!-- movie 1 -->
+          <li class="movie-item">
+            <div class="poster-container">
+              <img src="/images/movie-up.svg" alt="Poster Don't Look Up" />
+            </div>
+            <div class="movie-details">
+              <p class="movie-title">Don't Look Up</p>
+              <div class="movie-rating">
+                <div class="star-icon">
+                  <svg
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.99967 10.5133L11.1197 12.9999L10.0263 8.31325L13.6663 5.15992L8.87301 4.74659L6.99967 0.333252L5.12634 4.74659L0.333008 5.15992L3.96634 8.31325L2.87967 12.9999L6.99967 10.5133Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <span class="rating-text">4.2/5</span>
+              </div>
+            </div>
+          </li>
+          <!-- movie 2 -->
+          <li class="movie-item">
+            <div class="poster-container">
+              <img src="/images/movie-the batman.svg" alt="Poster The Batman" />
+            </div>
+            <div class="movie-details">
+              <p class="movie-title">All Of Us Are Dead</p>
+              <div class="movie-rating">
+                <div class="star-icon">
+                  <svg
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.99967 10.5133L11.1197 12.9999L10.0263 8.31325L13.6663 5.15992L8.87301 4.74659L6.99967 0.333252L5.12634 4.74659L0.333008 5.15992L3.96634 8.31325L2.87967 12.9999L6.99967 10.5133Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <span class="rating-text">4.2/5</span>
+              </div>
+            </div>
+          </li>
+          <!-- movie 3 -->
+          <li class="movie-item">
+            <div class="poster-container">
+              <img src="/images/movie-blue-lock.svg" alt="Poster Blue Lock" />
+            </div>
+            <div class="movie-details">
+              <p class="movie-title">Blue Lock</p>
+              <div class="movie-rating">
+                <div class="star-icon">
+                  <svg
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.99967 10.5133L11.1197 12.9999L10.0263 8.31325L13.6663 5.15992L8.87301 4.74659L6.99967 0.333252L5.12634 4.74659L0.333008 5.15992L3.96634 8.31325L2.87967 12.9999L6.99967 10.5133Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <span class="rating-text">4.6/5</span>
+              </div>
+            </div>
+            <button class="episodeBaru">
+              <span class="episodeBaru-text">Episode Baru</span>
+            </button>
+          </li>
+          <!-- movie 4 -->
+          <li class="movie-item">
+            <div class="poster-container">
+              <img
+                src="/images/movie-amancalledotto.svg"
+                alt="Poster A Man Called Otto"
+              />
+            </div>
+            <div class="movie-details">
+              <p class="movie-title">A Man Called Otto</p>
+              <div class="movie-rating">
+                <div class="star-icon">
+                  <svg
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.99967 10.5133L11.1197 12.9999L10.0263 8.31325L13.6663 5.15992L8.87301 4.74659L6.99967 0.333252L5.12634 4.74659L0.333008 5.15992L3.96634 8.31325L2.87967 12.9999L6.99967 10.5133Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <span class="rating-text">4.4/5</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="arrow-btn">
+          <div class="arrow-right">
+            <button class="carousel-btn right-btn" aria-label="Scroll right">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 7.00008V9.00008H12L6.5 14.5001L7.92 15.9201L15.84 8.00008L7.92 0.0800781L6.5 1.50008L12 7.00008H0Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Continue Watching Section end -->
+
+    <!-- Top Rating Section start -->
+    <section class="top-rating">
+      <h3 class="top-rating-title">Top Rating Film dan Series Hari Ini</h3>
+      <div class="topRating-wrapper">
+        <!-- button kiri -->
+        <div class="arrow-btn">
+          <div class="arrow-left">
+            <button class="carousel-btn left-btn" aria-label="Scroll left">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.0002 7.00008V9.00008H4.00016L9.50016 14.5001L8.08016 15.9201L0.160156 8.00008L8.08016 0.0800781L9.50016 1.50008L4.00016 7.00008H16.0002Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="topRating-list">
+          <!-- movie 1 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movie-suzume.svg"
+              alt="movie-card"
+            />
+            <button class="movie-card-button">
+              <span class="newEpisode">Episode Baru</span>
+            </button>
+          </div>
+          <!-- movie 2 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movie-jurassic.svg"
+              alt="movie-card"
+            />
+          </div>
+          <!-- movie 3 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movie-sonic.svg"
+              alt="movie-card"
+            />
+          </div>
+          <!-- movie 4 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movie-allofusdead.svg"
+              alt="movie-card"
+            />
+            <button class="movie-card-button">
+              <span class="newEpisode">Episode Baru</span>
+            </button>
+          </div>
+          <!-- movie 5 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movie-bighero.svg"
+              alt="movie-card"
+            />
+            <button class="movie-card-button">
+              <span class="newEpisode">Episode Baru</span>
+            </button>
+            <button class="topRating-text"><span>Top 10</span></button>
+          </div>
+        </div>
+        <!-- button kanan -->
+        <div class="arrow-btn">
+          <div class="arrow-right">
+            <button class="carousel-btn right-btn" aria-label="Scroll right">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 7.00008V9.00008H12L6.5 14.5001L7.92 15.9201L15.84 8.00008L7.92 0.0800781L6.5 1.50008L12 7.00008H0Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Top Rating Section end -->
+
+    <!-- Trending Film Section start -->
+    <section class="trending">
+      <h3 class="trending-title">Film Trending</h3>
+      <div class="trending-wrapper">
+        <!-- button kiri -->
+        <div class="arrow-btn">
+          <div class="arrow-left">
+            <button class="carousel-btn left-btn" aria-label="Scroll left">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.0002 7.00008V9.00008H4.00016L9.50016 14.5001L8.08016 15.9201L0.160156 8.00008L8.08016 0.0800781L9.50016 1.50008L4.00016 7.00008H16.0002Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="trending-list">
+          <!-- movie 1 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movi-tommorrow.svg"
+              alt="movie-card"
+            />
+            <button class="topRating-text"><span>Top 10</span></button>
+          </div>
+          <!-- movie 2 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movie-quantumania.svg"
+              alt="movie-card"
+            />
+            <button class="topRating-text"><span>Top 10</span></button>
+          </div>
+          <!-- movie 3 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movie-guardians.svg"
+              alt="movie-card"
+            />
+            <button class="topRating-text"><span>Top 10</span></button>
+          </div>
+          <!-- movie 4 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movie-otto.svg"
+              alt="movie-card"
+            />
+            <button class="topRating-text"><span>Top 10</span></button>
+          </div>
+          <!-- movie 5 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movie-littlemermaid.svg"
+              alt="movie-card"
+            />
+            <button class="topRating-text"><span>Top 10</span></button>
+          </div>
+        </div>
+        <!-- button kanan -->
+        <div class="arrow-btn">
+          <div class="arrow-right">
+            <button class="carousel-btn right-btn" aria-label="Scroll right">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 7.00008V9.00008H12L6.5 14.5001L7.92 15.9201L15.84 8.00008L7.92 0.0800781L6.5 1.50008L12 7.00008H0Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Trending Film Section end -->
+
+    <!-- New Release Section start -->
+    <section class="newRelease">
+      <h3 class="newRelease-title">Rilis Baru</h3>
+      <div class="newRelease-wrapper">
+        <!-- button kiri -->
+        <div class="arrow-btn">
+          <div class="arrow-left">
+            <button class="carousel-btn left-btn" aria-label="Scroll left">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.0002 7.00008V9.00008H4.00016L9.50016 14.5001L8.08016 15.9201L0.160156 8.00008L8.08016 0.0800781L9.50016 1.50008L4.00016 7.00008H16.0002Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="newRelease-list">
+          <!-- movie 1 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movie-littlemermaid.svg"
+              alt="movie-card"
+            />
+            <button class="topRating-text"><span>Top 10</span></button>
+          </div>
+          <!-- movie 2 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movie-dutyafterschool.svg"
+              alt="movie-card"
+            />
+            <button class="movie-card-button">
+              <span class="newEpisode">Episode Baru</span>
+            </button>
+          </div>
+          <!-- movie 3 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movie-bighero.svg"
+              alt="movie-card"
+            />
+            <button class="topRating-text"><span>Top 10</span></button>
+          </div>
+          <!-- movie 4 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movie-allofusdead.svg"
+              alt="movie-card"
+            />
+            <button class="movie-card-button">
+              <span class="newEpisode">Episode Baru</span>
+            </button>
+          </div>
+          <!-- movie 5 -->
+          <div class="movie-card">
+            <img
+              class="movie-card-image"
+              src="/images/movie-missing.svg"
+              alt="movie-card"
+            />
+          </div>
+        </div>
+        <!-- button kanan -->
+        <div class="arrow-btn">
+          <div class="arrow-right">
+            <button class="carousel-btn right-btn" aria-label="Scroll right">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 7.00008V9.00008H12L6.5 14.5001L7.92 15.9201L15.84 8.00008L7.92 0.0800781L6.5 1.50008L12 7.00008H0Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- New Release Section end -->
+
+    <!-- Footer Section start -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-logoCopyright">
+          <div class="footer-logo">
+            <div class="footer-logoWrapper">
+              <img src="/assets/movie.png" alt="movie vector" />
+            </div>
+            <a href="index.html" class="footer-logotext">CHILL</a>
+          </div>
+          <p class="copyright"><span>@2023 Chill All Rights Reserved.</span></p>
+        </div>
+        <div class="footer-content">
+          <div class="genre">
+            <p class="genre-title">Genre</p>
+            <!-- genre column 1 -->
+            <div class="genre-wrapper">
+              <ul class="genre-list">
+                <li><a href="#">Aksi</a></li>
+                <li><a href="#">Anak-anak</a></li>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">Britania</a></li>
+              </ul>
+              <!-- genre column 2 -->
+              <ul class="genre-list">
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Fantasi Ilmiah & Fantasi</a></li>
+                <li><a href="#">Kejahatan</a></li>
+                <li><a href="#">KDrama</a></li>
+              </ul>
+              <!-- genre column 3 -->
+              <ul class="genre-list">
+                <li><a href="#">Komedi</a></li>
+                <li><a href="#">Petualangan</a></li>
+                <li><a href="#">Perang</a></li>
+                <li><a href="#">Romantis</a></li>
+              </ul>
+              <!-- genre column 4 -->
+              <ul class="genre-list">
+                <li><a href="#">Sains & Alam</a></li>
+                <li><a href="#">Thriller </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="information">
+            <p class="information-title">Bantuan</p>
+            <!-- genre column 1 -->
+            <div class="information-wrapper">
+              <ul class="information-list">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Kontak kami</a></li>
+                <li><a href="#">Privasi</a></li>
+                <li><a href="#">Syarat & Ketentuan</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <!-- File JavaScript -->
+    <script src="/js/index.js"></script>
+  </body>
 </html>
